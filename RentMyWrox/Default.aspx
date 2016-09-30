@@ -8,7 +8,7 @@
     <link href="Content/main.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-    <h1 class="title">I am Informative Text Title</h1>             <div class="label">I am input text</div>
+    <h1 class="title">I am Informative Text Title</h1>                               <div class="label">I am input text</div>
 
     I am Informative Text
 
