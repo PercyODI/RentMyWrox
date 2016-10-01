@@ -13,16 +13,5 @@ namespace RentMyWrox.Admin
         {
 
         }
-
-        protected void SaveItem_Clicked(object sender, EventArgs e)
-        {
-            string name = tbName.Text;
-            string description = tbDescription.Text;
-            string itemNumber = tbItemNumber.Text;
-            double cost = double.Parse(tbCost.Text);
-            DateTime acquiredDate = DateTime.Parse(tbAcquiredDate.Text);
-            byte[] uploadedFileContent = fuPicture.FileBytes;
-        }
-
     }
 }
