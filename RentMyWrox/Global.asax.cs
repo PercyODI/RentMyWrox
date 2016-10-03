@@ -14,8 +14,8 @@ namespace RentMyWrox
         void Application_Start(object sender, EventArgs e)
         {
             // Code that runs on application startup
-            RouteConfig.RegisterRoutes(RouteTable.Routes);
-            BundleConfig.RegisterBundles(BundleTable.Bundles);
+            RouteConfig2.RegisterRoutes(RouteTable.Routes);
+            BundleConfig2.RegisterBundles(BundleTable.Bundles);
         }
     }
 }

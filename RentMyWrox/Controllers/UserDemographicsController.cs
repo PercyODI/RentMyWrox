@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using RentMyWrox.Models;
 
 namespace RentMyWrox.Controllers
 {
@@ -23,12 +24,12 @@ namespace RentMyWrox.Controllers
         // GET: UserDemographics/Create
         public ActionResult Create()
         {
-            return View();
+            return View("Manage");
         }
 
         // POST: UserDemographics/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(UserDemographics obj)
         {
             try
             {
@@ -45,7 +46,17 @@ namespace RentMyWrox.Controllers
         // GET: UserDemographics/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            var model = new UserDemographics
+            {
+                Gender = "Male",
+                Birthdate = new DateTime(2000, id, id),
+                MaritalStatus = "Married",
+                OwnHome = true,
+                TotalPeopleInHome = id,
+                Hobbies = new List<string> { "Gardening", "Other" }
+            };
+
+            return View("Manage", model);
         }
 
         // POST: UserDemographics/Edit/5
@@ -64,26 +75,6 @@ namespace RentMyWrox.Controllers
             }
         }
 
-        // GET: UserDemographics/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
 
-        // POST: UserDemographics/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
     }
 }
