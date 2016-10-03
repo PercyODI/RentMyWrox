@@ -11,7 +11,7 @@ namespace RentMyWrox.Admin
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+             
         }
         
         protected void SaveItem_Clicked(object sender, EventArgs e)
