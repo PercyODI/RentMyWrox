@@ -1,31 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ManageItem.aspx.cs" Inherits="RentMyWrox.Admin.ManageItem" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/WebForms.Master" AutoEventWireup="true" CodeBehind="ManageItem.aspx.cs" Inherits="RentMyWrox.Admin.ManageItem" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-    <style>
-        .dataentry input{
-            width: 250px;
-            margin-left: 20px;
-            margin-top: 15px;
-        }
-
-        .dataentry textarea{
-            width: 250px;
-            margin-left: 20px;
-            margin-top: 15px;
-        }
-
-        .dataentry label{
-            width: 75px;
-            margin-left: 20px;
-            margin-top: 15px;
-        }
-
-        #fuPicture{
-            margin-top: -20px;
-            margin-left: 120px;
-        }
-    </style>
-    <div style="margin-top:100px;"></div>
+<asp:Content ID="Content1" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <div></div>
     <div class="dataentry">
         <asp:Label runat="server" Text="Name" AssociatedControlID="tbName" />
         <asp:TextBox runat="server" ID="tbName" />

@@ -1,6 +1,7 @@
 ﻿@model RentMyWrox.Models.UserDemographics
 
 @{
+    Layout = "~/Views/Shared/_MVCLayout.cshtml";
     ViewBag.Title = "Create";
     var hobbyList = new List<string>
     { "Gardening", "Reading", "Games", "Dining Out", "Sports", "Other"};
@@ -75,15 +76,19 @@
 
         <div class="form-group">
             @Html.LabelFor(model => model.Hobbies,
-                htmlAttributes: new {  @class = "control-label col-md-2"})
+                htmlAttributes: new { @class = "control-label col-md-2" })
             <div class="col-md-10">
                 @foreach (string hobby in hobbyList)
                 {
-                    string checkedText = Model.Hobbies.Contains(hobby)
-                        ? "checked"
-                        : string.Empty;
+                    string checkedText = string.Empty;
+                    if (Model != null)
+                    {
+                        checkedText = Model.Hobbies.Contains(hobby)
+                            ? "checked"
+                            : string.Empty;
+                    }
                     <span>
-                        <input name="hobbies" value="@hobby" type="checkbox" @checkedText/>
+                        <input name="hobbies" value="@hobby" type="checkbox" @checkedText />
                         @hobby
                     </span>
                 }
