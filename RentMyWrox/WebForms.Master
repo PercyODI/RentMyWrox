@@ -7,14 +7,15 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="Content/RentMyWrox.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/RentMyWrox.css" rel="stylesheet" type="text/css" runat="server" />
 </head>
 <body>
     <form id="form1" runat="server">
         <div id="header">
         </div>
         <div id="nav">
-            Navigation content here
+            <asp:Menu ID="LeftNavigation" runat="server" DataSourceID="SiteMapDataSource1" IncludeStyleBlock="False"></asp:Menu>
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" ShowStartingNode="False" />
         </div>
 
         <div id="section">

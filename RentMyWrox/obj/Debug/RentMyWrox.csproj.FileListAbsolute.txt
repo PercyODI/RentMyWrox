@@ -364,3 +364,5 @@ C:\Users\pah9qd\Desktop\Web Apps 2\Challenge 2\Practice\RentMyWrox\RentMyWrox\bi
 C:\Users\pah9qd\Desktop\Web Apps 2\Challenge 2\Practice\RentMyWrox\RentMyWrox\bin\System.Web.WebPages.xml
 C:\Users\pah9qd\Desktop\Web Apps 2\Challenge 2\Practice\RentMyWrox\RentMyWrox\bin\System.Web.WebPages.Deployment.xml
 C:\Users\pah9qd\Desktop\Web Apps 2\Challenge 2\Practice\RentMyWrox\RentMyWrox\bin\System.Web.WebPages.Razor.xml
+C:\Users\pah9qd\Desktop\Web Apps 2\Challenge 2\Practice\RentMyWrox\RentMyWrox\bin\MySql.Data.dll
+C:\Users\pah9qd\Desktop\Web Apps 2\Challenge 2\Practice\RentMyWrox\RentMyWrox\bin\MySql.Data.Entity.EF6.dll

@@ -32,25 +32,76 @@
     padding: 5px;
 }
 
+.dataentry {
+    overflow: auto;
+    display: block;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+
+}
+
 .dataentry input {
+    display: block;
+    clear: right;
+    overflow: auto;
     width: 250px;
     margin-left: 20px;
     margin-top: 15px;
 }
 
 .dataentry textarea {
+    overflow: auto;
     width: 250px;
-    margin-left: 20px;
+    /*margin-left: 20px;*/
     margin-top: 15px;
 }
 
 .dataentry label {
-    width: 75px;
+    display: block;
+    float: left;
+    overflow: auto;
+    width: 111px;
     margin-left: 20px;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 
 #fuPicture {
+    overflow: auto;
     margin-top: -20px;
     margin-left: 120px;
 }
+
+#LeftNavigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+}
+
+#LeftNavigation a {
+    color: #C40D42;
+    text-decoration: none;
+    white-space: nowrap;
+    display: block;
+}
+
+ul.level1 .selected {
+    /* Defines the appearance of active menu items. */
+    background-color: white;
+    color: #C40D42;
+    padding-right: 15px;
+    padding-left: 8px;
+}
+
+a.level1 {
+    /* Adds some white space to the left of the main menu item text.
+  !important is used to overrule the in-line CSS that the menu generates */
+    padding-left: 5px !important;
+    padding-right: 15px;
+}
+
+    a.level1:hover {
+        /* Defines the hover style for the main and sub items. */
+        background-color: #509EE7;
+    }
